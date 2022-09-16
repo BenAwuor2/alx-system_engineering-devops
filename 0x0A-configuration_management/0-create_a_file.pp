@@ -1,9 +1,7 @@
-# Task 0: Create a file
-file { '/tmp/holberton':
-  ensure  =>  'file',
-  path    =>  '/tmp/holberton',
-  content =>  'I love Puppet',
-  mode    =>  '0744',
-  group   =>  'www-data',
-  owner   =>  'www-data',
+# Create a file in /tmp
+file {'/tmp/school':
+  mode    => '0744',
+  owner   => 'www-data',
+  group   => 'www-data',
+  content => 'I love Puppet'
 }

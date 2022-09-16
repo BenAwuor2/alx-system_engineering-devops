@@ -1,5 +1,4 @@
-# Install the puppet-lint package
-package { 'puppet-lint':
-  ensure   => '2.1.0',
-  provider => 'flask',
+# Task 1: Install a package
+exec {
+  command =>  'puppet-lint -v 2.1.1',
 }
